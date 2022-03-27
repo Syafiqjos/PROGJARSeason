@@ -1,0 +1,10 @@
+import queue
+
+# Stack
+q = queue.LifoQueue()
+
+for i in range(5):
+    q.put(i)
+
+while not q.empty():
+    print(str(q.get()))
